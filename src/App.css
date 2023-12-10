@@ -1,6 +1,28 @@
+@font-face {
+  font-family: 'Rubik/Regular';
+  src: url('../public/Rubik/static/Rubik-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto/Regular';
+  src: url('../public/Noto/static/NotoSansJP-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto/Thin';
+  src: url('../public/Noto/static/NotoSansJP-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito/Regular';
+  src: url('../public/Nunito/static/Nunito-Regular.ttf');
+}
+
 .App {
+  font-family: 'Rubik/Regular';
   background-color: black;
   text-align: center;
+  color: #bfbebe;
 }
 
 .App-logo {
