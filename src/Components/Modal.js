@@ -86,9 +86,10 @@ export default function Modal() {
                 maxWidth: "80%",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              quis massa vitae ex pulvinar rhoncus ut ut lacus. Praesent
-              suscipit arcu eu gravida pellentesque. Phasellus eu dictum turpis.
+              Développeur Fullstack React JS et Node JS fort d';une expertise technique solide,
+              je m&apos;efforce de créer des expériences et interfaces utilisateur agréables.
+              Ma passion pour le développement et ma capacité à résoudre efficacement les défis techniques font de moi un atout pour tout projet de développement web.<br/><br/>
+              Djibril, prêt à contribuer à des projets ambitieux et à apporter mes compétences à votre équipe.
             </h3>
           </div>
         </span>
