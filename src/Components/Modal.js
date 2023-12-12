@@ -6,7 +6,7 @@ import { Divider } from "@mui/material";
 
 export default function Modal() {
   return (
-    <Fade direction="down" duration={1000}>
+    <Fade direction="down" duration={700}>
       <div className={Style.mainContainer}>
         <div style={{ padding: "0.5em", backgroundColor: "#18fad9" }}></div>
 
@@ -22,22 +22,22 @@ export default function Modal() {
                 <Divider className={Style.line} />
               </span>
               <span className={Style.LinkBar}>
-                <a href="">Github</a>
+                <a href=""><h2>Github</h2></a>
                 <Divider className={Style.line2} />
-                <a href="/">Linkedin</a>
+                <a href="/"><h2>Linkedin</h2></a>
                 <Divider className={Style.line2} />
                 <a
                   download={"SAMASSA_DJIBRIL_CV"}
                   href="SAMASSA_DJIBRIL_CV.pdf"
                 >
-                  CV
+                  <h2>CV</h2>
                 </a>
                 <Divider className={Style.line2} />
                 <a
                   download={"SAMASSA_DJIBRIL_LETTRE"}
                   href="SAMASSA_DJIBRIL_LDM.pdf"
                 >
-                  Lettre de motivation
+                  <h2>Lettre de motivation</h2>
                 </a>
               </span>
               <button
@@ -60,7 +60,7 @@ export default function Modal() {
 
           {/* pt3 */}
           <div className={Style.pt3}>
-            <h5
+            <h4
               className={Style.strechedText}
               style={{
                 color: "#18fad9",
@@ -68,8 +68,8 @@ export default function Modal() {
               }}
             >
               Présentation
-            </h5>
-            <h3
+            </h4>
+            <h2
               className={Style.intro}
               style={{
                 letterSpacing: "1px",
@@ -78,8 +78,8 @@ export default function Modal() {
               Développeur Fullstack, <br />
               React JS / Node JS, <br />
               sensible à l &apos; ux / ui et à l &apos; accéssibilité
-            </h3>
-            <p
+            </h2>
+            <h3
               style={{
                 letterSpacing: "1px",
                 marginTop: "10px",
@@ -89,7 +89,7 @@ export default function Modal() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
               quis massa vitae ex pulvinar rhoncus ut ut lacus. Praesent
               suscipit arcu eu gravida pellentesque. Phasellus eu dictum turpis.
-            </p>
+            </h3>
           </div>
         </span>
         <div style={{ padding: "0.5em", backgroundColor: "#18fad9" }}></div>
