@@ -20,7 +20,8 @@
 
 .App {
   font-family: 'Rubik/Regular';
-  background-color: black;
+  background-color: #222020;
+  min-height: 100vh;
   text-align: center;
   color: #bfbebe;
 }

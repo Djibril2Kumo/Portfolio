@@ -119,6 +119,10 @@
   transition-duration: 200ms;
 }
 
+.anime{
+  background: red;
+}
+
 .customButton:hover {
   cursor: pointer;
   color: #222020;
@@ -135,4 +139,20 @@
   text-transform: uppercase;
   letter-spacing: 4.5px;
   line-height: 30px;
+}
+
+.toTop{
+  animation: disparition 1s forwards;
+  overflow: hidden;
+}
+
+@keyframes disparition {
+  40%{
+    opacity: 1;
+    transform: translateY(-30%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }

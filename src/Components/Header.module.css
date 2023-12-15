@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vw 5vw;
+  animation: apparition 1.5s;
+}
+
+@keyframes apparition {
+    0%{
+      opacity: 0%;
+      /* transform: translateY(-30%); */
+    }
+    100% {
+      opacity: 100%;
+      /* transform: translateY(100%); */
+    }
+  }
