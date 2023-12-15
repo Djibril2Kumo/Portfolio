@@ -34,17 +34,14 @@
   justify-content: center;
 }
 
-.strechedText {
-  letter-spacing: 2px;
-  margin-bottom: -5px;
-}
+
 
 .pt1 {
   width: 30%;
   text-align: left;
   color: #e1e1e1;
   /* margin: 0px 2em; */
-  height: 35vh;
+  height: 40vh;
 }
 .pt2 {
   width: 20%;
@@ -56,7 +53,7 @@
 }
 
 .pt1 > span {
-  width: 85%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -79,7 +76,7 @@
 }
 
 .LinkBar {
-  width: 100%;
+  width: 110%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,10 +101,12 @@
   border: 2px solid #18fad9;
   box-shadow: 20px 20px 15px black;
   border-radius: 500px;
-  width: 400px;
+  width: 300px;
 }
 
 .customButton {
+  cursor: pointer;
+  cursor: pointer;
   margin-top: 20px;
   padding: 12px 20px;
   background-color: transparent;
@@ -124,7 +123,6 @@
 }
 
 .customButton:hover {
-  cursor: pointer;
   color: #222020;
   background-color: #18fad9;
   box-shadow: 10px 10px 8px black;
@@ -147,12 +145,8 @@
 }
 
 @keyframes disparition {
-  40%{
-    opacity: 1;
-    transform: translateY(-30%);
-  }
   100% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(-100%);
   }
 }

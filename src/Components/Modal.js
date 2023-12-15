@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import Style from "./Modal.module.css";
 import { Fade } from "react-awesome-reveal";
-import { Divider, Typography } from "@mui/material";
+import { Button, Divider, Typography } from "@mui/material";
 
 // eslint-disable-next-line react/prop-types
-export default function Modal({disableModal}) {
-  console.log(disableModal)
+export default function Modal({ disableModal }) {
+  console.log(disableModal);
   const [anime, setanime] = useState(false);
   const handleAnimate = () => {
-    setanime(true)
-    setTimeout(()=>{
-      disableModal()
-      setanime(false)
-    },[1000])
-  }
+    setanime(true);
+    setTimeout(() => {
+      disableModal();
+      setanime(false);
+    }, [1000]);
+  };
   return (
-    <Fade className={anime ? Style.toTop : null} direction={'down'} duration={700}>
-      <div className={`${Style.mainContainer} ${anime ? Style.toTop : ''}`}>
+    <Fade
+      className={anime ? Style.toTop : null}
+      direction={"down"}
+      duration={700}
+    >
+      <div className={`${Style.mainContainer} ${anime ? Style.toTop : ""}`}>
         <div style={{ padding: "0.5em", backgroundColor: "#18fad9" }}></div>
 
         <span className={Style.container}>
@@ -24,7 +28,7 @@ export default function Modal({disableModal}) {
           <div className={Style.pt1}>
             <span>
               <span>
-                <Typography variant="h3">
+                <Typography variant="h4">
                   Djibril <br />
                   SAMASSA
                 </Typography>
@@ -32,25 +36,25 @@ export default function Modal({disableModal}) {
               </span>
               <span className={Style.LinkBar}>
                 <a href="">
-                  <Typography variant="h5">Github</Typography>
+                  <Typography variant="h6">Github</Typography>
                 </a>
                 <Divider className={Style.line2} />
                 <a href="/">
-                  <Typography variant="h5">Linkedin</Typography>
+                  <Typography variant="h6">Linkedin</Typography>
                 </a>
                 <Divider className={Style.line2} />
                 <a
                   download={"SAMASSA_DJIBRIL_CV"}
                   href="SAMASSA_DJIBRIL_CV.pdf"
                 >
-                  <Typography variant="h5">CV</Typography>
+                  <Typography variant="h6">CV</Typography>
                 </a>
                 <Divider className={Style.line2} />
                 <a
                   download={"SAMASSA_DJIBRIL_LETTRE"}
                   href="SAMASSA_DJIBRIL_LDM.pdf"
                 >
-                  <Typography variant="h5">Lettre de motivation</Typography>
+                  <Typography variant="h6">Lettre de motivation</Typography>
                 </a>
               </span>
               <button
@@ -58,9 +62,9 @@ export default function Modal({disableModal}) {
                   handleAnimate();
                 }}
                 style={{ letterSpacing: "1.2px" }}
-                className={ Style.customButton}
+                className={Style.customButton}
               >
-                <h3>Découvrir mon profil</h3>
+                Découvrir mon profil
               </button>
             </span>
           </div>
@@ -76,16 +80,19 @@ export default function Modal({disableModal}) {
 
           {/* pt3 */}
           <div className={Style.pt3}>
-            <Typography variant="h6"
-              className={Style.strechedText}
+            <Typography
+              variant="h7 "
               style={{
                 color: "#18fad9",
                 textTransform: "uppercase",
+                letterSpacing: '2px',
+                marginBottom:'20px'
               }}
             >
               Présentation
             </Typography>
-            <Typography variant="h5"
+            <Typography
+              variant="h6"
               className={Style.intro}
               style={{
                 letterSpacing: "1px",
@@ -96,6 +103,7 @@ export default function Modal({disableModal}) {
               sensible à l &apos; ux / ui et à l &apos; accéssibilité
             </Typography>
             <Typography
+              variant="body3"
               style={{
                 letterSpacing: "1px",
                 marginTop: "10px",

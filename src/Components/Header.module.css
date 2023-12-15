@@ -1,17 +1,33 @@
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5vw 5vw;
   animation: apparition 1.5s;
 }
 
 @keyframes apparition {
-    0%{
-      opacity: 0%;
-      /* transform: translateY(-30%); */
-    }
-    100% {
-      opacity: 100%;
-      /* transform: translateY(100%); */
-    }
+  0% {
+    opacity: 0%;
   }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.test:hover {
+  background-color: 2px solid hwb(171 6% 19%);
+  border-bottom: 2px solid #18fad9;
+}
+
+.customButton {
+  cursor: pointer;
+  padding: 12px 20px;
+  background-color: transparent;
+  color: #18fad9;
+  font-weight: 550;
+  border: 2px solid #18fad9;
+  text-transform: uppercase;
+  width: fit-content;
+  transition-duration: 200ms;
+}

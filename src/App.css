@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'Rubik/Regular';
-  src: url('../public/Rubik/static/Rubik-Regular.ttf');
+  font-family: "Rubik/Regular";
+  src: url("../public/Rubik/static/Rubik-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Noto/Regular';
-  src: url('../public/Noto/static/NotoSansJP-Regular.ttf');
+  font-family: "Noto/Regular";
+  src: url("../public/Noto/static/NotoSansJP-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Noto/Thin';
-  src: url('../public/Noto/static/NotoSansJP-Medium.ttf');
+  font-family: "Noto/Thin";
+  src: url("../public/Noto/static/NotoSansJP-Medium.ttf");
 }
 
 @font-face {
-  font-family: 'Nunito/Regular';
-  src: url('../public/Nunito/static/Nunito-Regular.ttf');
+  font-family: "Nunito/Regular";
+  src: url("../public/Nunito/static/Nunito-Regular.ttf");
 }
 
 .App {
-  font-family: 'Rubik/Regular';
+  font-family: "Rubik/Regular";
   background-color: #222020;
   min-height: 100vh;
   text-align: center;
@@ -59,4 +59,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  color: #222020;
+  text-decoration: none;
+  transition-duration: 300ms;
 }
