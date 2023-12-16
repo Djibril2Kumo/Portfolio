@@ -4,6 +4,8 @@
   align-items: center;
   padding: 1.5vw 5vw;
   animation: apparition 1.5s;
+  animation: transition 1s;
+  overflow: hidden;
 }
 
 @keyframes apparition {
@@ -15,19 +17,41 @@
   }
 }
 
-.test:hover {
-  background-color: 2px solid hwb(171 6% 19%);
-  border-bottom: 2px solid #18fad9;
-}
-
 .customButton {
   cursor: pointer;
   padding: 12px 20px;
   background-color: transparent;
   color: #18fad9;
   font-weight: 550;
-  border: 2px solid #18fad9;
+  border:none;
   text-transform: uppercase;
   width: fit-content;
   transition-duration: 200ms;
+}
+
+@keyframes transition {
+  0% {
+    background-color: #18fad9;
+    transform: translateY(+500%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.selected {
+  padding: 1px 0;
+  background-color: #18fad9;
+  color: black;
+  animation: hover 0.05s linear;
+}
+
+
+@keyframes hover {
+  0% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

@@ -5,7 +5,6 @@ import { Button, Divider, Typography } from "@mui/material";
 
 // eslint-disable-next-line react/prop-types
 export default function Modal({ disableModal }) {
-  console.log(disableModal);
   const [anime, setanime] = useState(false);
   const handleAnimate = () => {
     setanime(true);
@@ -28,47 +27,57 @@ export default function Modal({ disableModal }) {
           <div className={Style.pt1}>
             <span>
               <span>
-                <Typography variant="h4">
+                <h1 data-text="Djibril SAMASSA" className={Style.name}>
                   Djibril <br />
                   SAMASSA
-                </Typography>
+                </h1>
                 <Divider className={Style.line} />
               </span>
-              <span className={Style.LinkBar}>
-                <a href="">
-                  <Typography variant="h6">Github</Typography>
-                </a>
-                <Divider className={Style.line2} />
-                <a href="/">
-                  <Typography variant="h6">Linkedin</Typography>
-                </a>
-                <Divider className={Style.line2} />
-                <a
-                  download={"SAMASSA_DJIBRIL_CV"}
-                  href="SAMASSA_DJIBRIL_CV.pdf"
-                >
-                  <Typography variant="h6">CV</Typography>
-                </a>
-                <Divider className={Style.line2} />
-                <a
-                  download={"SAMASSA_DJIBRIL_LETTRE"}
-                  href="SAMASSA_DJIBRIL_LDM.pdf"
-                >
-                  <Typography variant="h6">Lettre de motivation</Typography>
-                </a>
+              <span className={Style.flexMedia}>
+                <span>
+                  <span className={Style.LinkBar}>
+                    <Typography className={Style.mediaName} variant="h7">Djibril SAMASSA</Typography>
+                    <a href="/">
+                      <Typography variant="h7">Github</Typography>
+                    </a>
+                    <Divider className={Style.line2} />
+                    <a href="/">
+                      <Typography variant="h7">Linkedin</Typography>
+                    </a>
+                    <Divider className={Style.line2} />
+                    <a
+                      download={"SAMASSA_DJIBRIL_CV"}
+                      href="SAMASSA_DJIBRIL_CV.pdf"
+                    >
+                      <Typography variant="h7">CV</Typography>
+                    </a>
+                    <Divider className={Style.line2} />
+                    <a
+                      download={"SAMASSA_DJIBRIL_LETTRE"}
+                      href="SAMASSA_DJIBRIL_LDM.pdf"
+                    >
+                      <Typography variant="h7">Lettre de motivation</Typography>
+                    </a>
+                  </span>
+                  <button
+                    onClick={() => {
+                      handleAnimate();
+                    }}
+                    style={{ letterSpacing: "1.2px" }}
+                    className={Style.customButton}
+                  >
+                    Découvrir mon profil
+                  </button>
+                </span>
+                <img
+                  src="avatar.png"
+                  alt="Avatar de personne caucasienne"
+                  className={Style.avatarMediaScreen}
+                />
               </span>
-              <button
-                onClick={() => {
-                  handleAnimate();
-                }}
-                style={{ letterSpacing: "1.2px" }}
-                className={Style.customButton}
-              >
-                Découvrir mon profil
-              </button>
             </span>
           </div>
-
+          <Divider className={Style.longDivider} />
           {/* pt2 */}
           <div className={Style.pt2}>
             <img
@@ -85,8 +94,8 @@ export default function Modal({ disableModal }) {
               style={{
                 color: "#18fad9",
                 textTransform: "uppercase",
-                letterSpacing: '2px',
-                marginBottom:'20px'
+                letterSpacing: "2px",
+                marginBottom: "20px",
               }}
             >
               Présentation
@@ -123,7 +132,10 @@ export default function Modal({ disableModal }) {
             </Typography>
           </div>
         </span>
-        <div style={{ padding: "0.5em", backgroundColor: "#18fad9" }}></div>
+        <div
+          className={Style.bottom}
+          style={{ padding: "0.5em", backgroundColor: "#18fad9" }}
+        ></div>
       </div>
     </Fade>
   );
