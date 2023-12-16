@@ -17,7 +17,9 @@ import Person2Icon from "@mui/icons-material/Person2";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-export default function Header() {
+/*eslint-disable*/
+
+export default function Header({ sections, setSelectedMenu }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
   const [openMenu, setOpenMenu] = useState(Boolean(anchorEl));
@@ -38,13 +40,6 @@ export default function Header() {
     setWindowSize(e.currentTarget.innerWidth);
   };
 
-  const sections = [
-    { id: 0, name: "Formations" },
-    { id: 1, name: "Expériences" },
-    { id: 2, name: "Compétences" },
-    { id: 3, name: "A propos de moi" },
-    { id: 4, name: "Livre blanc" },
-  ];
   const downloadMenuItem = [
     {
       type: "download",
@@ -98,7 +93,7 @@ export default function Header() {
   const content = (
     <span
       style={{
-        width: `${windowSize > 1200 ? "60vw" : "fit-content"}`,
+        width: `${windowSize > 1200 ? "55vw" : "fit-content"}`,
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -116,11 +111,15 @@ export default function Header() {
         {sections.map((s) => {
           return (
             <span key={s.id}>
-              <ListItem disablePadding>
+              <ListItem
+                disablePadding
+                style={selected === s.id ? { paddingBottom: "10px" } : null}
+              >
                 <ListItemButton
                   sx={{ textAlign: "center" }}
                   onClick={() => {
                     setSelected(s.id);
+                    setSelectedMenu(s.id);
                   }}
                 >
                   <ListItemText primary={s.name} />

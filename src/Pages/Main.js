@@ -1,40 +1,32 @@
 /*eslint-disable*/
-import { react, useState } from "react";
-import AppBar from "@mui/material/AppBar";
-import Typography from "@mui/material/Typography";
-import MenuItem from "@mui/material/MenuItem";
-import { Grid } from "@mui/material";
-import CustomButton from "../Components/Button";
+import { react, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import Modal from "../Components/Modal";
 import Header from "../Components/Header";
-
-// WCAG + RGAA
+import FormationsPage from "../Components/Formations";
 
 function ResponsiveAppBar() {
-  const [showModal, setShowModal] = useState(true);
-  const buttons = [
-    {
-      id: 0,
-      content: "C",
-    },
-    {
-      id: 1,
-      content: "LDM",
-    },
+  const [selected, setSelected] = useState(0);
+  const sections = [
+    { id: 0, name: "Formations" },
+    { id: 1, name: "Expériences" },
+    { id: 2, name: "Compétences" },
+    { id: 3, name: "A propos de moi" },
+    { id: 4, name: "Livre blanc" },
   ];
-  return showModal ? (
-    <Modal
-      disableModal={
-        ()=>{setShowModal(false)}
-      }
-    />
-  ) : <Header/>;
+
+  const components = [<FormationsPage />];
+
+  return (
+    <>
+      <Header setSelectedMenu={(id) => setSelected(id)} sections={sections} />
+      {components[selected]}
+    </>
+  );
 }
 
 ResponsiveAppBar.propTypes = {
   buttons: PropTypes.object,
-  disableModal: PropTypes.func
+  disableModal: PropTypes.func,
 };
 
 export default ResponsiveAppBar;

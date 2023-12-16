@@ -18,6 +18,11 @@
   src: url("../public/Nunito/static/Nunito-Regular.ttf");
 }
 
+.pageContainer {
+  min-height: 100vh;
+  margin-top: 5em;
+}
+
 .App {
   font-family: "Rubik/Regular";
   background-color: #222020;
