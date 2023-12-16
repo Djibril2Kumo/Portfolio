@@ -200,9 +200,16 @@ export default function Header() {
   return (
     <nav>
       <Box className={Style.container}>
-        <h2 className={Style.logo}>Djibril Samassa</h2>
-
-        {windowSize > 1200 ? (
+        {windowSize > 1300 ? (
+          <Typography variant="h5">Djibril Samassa</Typography>
+        ) : (
+          <img
+            src="avatar.png"
+            alt="Avatar de personne caucasienne"
+            className={Style.logo}
+          />
+        )}
+        {windowSize > 1300 ? (
           <span> {content}</span>
         ) : (
           <IconButton
