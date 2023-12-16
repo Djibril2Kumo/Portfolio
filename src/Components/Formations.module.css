@@ -3,7 +3,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 2em;
 }
 
 .container {
@@ -39,7 +38,7 @@
 
 @media (max-width: 900px) {
   .container:nth-child(n) {
-    margin: 4em 2em;
+    margin: 2em;
     padding: 0.5em;
     width: calc(100% - 5em);
   }

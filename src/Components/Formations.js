@@ -5,7 +5,7 @@ import Style from "./Formations.module.css";
 
 export default function FormationsPage() {
   return (
-    <div className='pageContainer'>
+    <div className={Style.pageContainer}>
       {Formations.map((formation) => (
         <div className={Style.container} key={formation.id}>
           <Typography variant="h6">{formation.title}</Typography>
