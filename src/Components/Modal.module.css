@@ -1,6 +1,6 @@
 .mainContainer {
   background-color: #222020;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -189,7 +189,9 @@
   height: 100%;
 }
 
-.mediaName, .avatarMediaScreen, .longDivider{
+.mediaName,
+.avatarMediaScreen,
+.longDivider {
   display: none;
 }
 
@@ -198,6 +200,21 @@
   background-color: #18fad9;
   border-radius: 50%;
   padding: 1em;
+}
+
+.flexCustomButton{
+  margin: 1em 0;
+  display: none;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: transparent;
+  color: #18fad9;
+  font-weight: 550;
+  border: 2px solid #18fad9;
+  text-transform: uppercase;
+  width: fit-content;
+  transition-duration: 200ms;
 }
 
 @media (max-width: 1400px) {
@@ -363,14 +380,29 @@
     display: none;
   }
 
-  .mediaName{
+  .mediaName {
     display: block;
     margin: 10px 0;
     color: #18fad9;
   }
 
-  .avatarMediaScreen{
+  .avatarMediaScreen {
     display: block;
     margin: 0.5em;
+  }
+}
+
+@media (max-width: 550px) {
+  .LinkBar{
+    padding: 0 1em;
+  }
+  .customButton{
+    display: none;
+  }
+  .flexMedia{
+    align-items: center;
+  }
+  .flexCustomButton{
+    display: block;
   }
 }

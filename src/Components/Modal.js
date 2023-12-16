@@ -75,6 +75,15 @@ export default function Modal({ disableModal }) {
                   className={Style.avatarMediaScreen}
                 />
               </span>
+              <button
+                    onClick={() => {
+                      handleAnimate();
+                    }}
+                    style={{ letterSpacing: "1.2px" }}
+                    className={Style.flexCustomButton}
+                  >
+                    Découvrir mon profil
+                  </button>
             </span>
           </div>
           <Divider className={Style.longDivider} />
