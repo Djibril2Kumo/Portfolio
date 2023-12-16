@@ -1,23 +1,23 @@
 [
     {
         "id": 0,
-        "title": "Bac Pro - Systèmes Numériques",
+        "title": "Bac Pro Systèmes Numériques",
         "etablissement": "Lycée professionel Galilée",
         "annee": "2020",
-        "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt elit eros, quis fermentum dolor venenatis vitae. Nullam id ullamcorper tortor. "
+        "description": "Le Bac Pro en Systèmes Numériques a éveillé ma passion pour la programmation, en m'initiant aux langages comme Python et Javascript. Ces compétences m'ont ouvert des portes dans la conception web."
     },
     {
         "id": 1,
-        "title": "Bac Pro - Systèmes Numériques",
-        "etablissement": "Lycée professionel Galilée",
-        "annee": "2020",
-        "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt elit eros, quis fermentum dolor venenatis vitae. Nullam id ullamcorper tortor. "
+        "title": "Bac +2 Développement web ",
+        "etablissement": "Konexio",
+        "annee": "2022",
+        "description": "Le titre RNCP DWWM m'a permis de rentrer dans le vif du sujet. Cette formation m'a familiarisé avec le développement pour le web et les appareils mobiles, me permettant d'explorer des langages tels que HTML, CSS, JavaScript, et des frameworks comme React."
     },
     {
         "id": 2,
-        "title": "Bac Pro - Systèmes Numériques",
-        "etablissement": "Lycée professionel Galilée",
-        "annee": "2020",
-        "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt elit eros, quis fermentum dolor venenatis vitae. Nullam id ullamcorper tortor. "
+        "title": "Bac +3 Chefs de projets digitaux",
+        "etablissement": "École Européenne des Métiers de l’Internet",
+        "annee": "2024",
+        "description": "Le Bachelor en Développement Web a consolidé les compétences que j'ai acquises précédemment et m'a permis d'apprendre d'autre méthode de développement garantissant un code de qualité et plus performant."
     }
 ]
