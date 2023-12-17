@@ -28,18 +28,6 @@ export default function Header({ sections, setSelectedMenu }) {
   const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
   const [windowSize, setWindowSize] = useState();
 
-  useEffect(() => {
-    setWindowSize(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const handleResize = (e) => {
-    setWindowSize(e.currentTarget.innerWidth);
-  };
-
   const downloadMenuItem = [
     {
       type: "download",
@@ -120,6 +108,8 @@ export default function Header({ sections, setSelectedMenu }) {
                   onClick={() => {
                     setSelected(s.id);
                     setSelectedMenu(s.id);
+                    setBurgerMenuOpen(false);
+                    setOpenMenu(false);
                   }}
                 >
                   <ListItemText primary={s.name} />
@@ -197,41 +187,42 @@ export default function Header({ sections, setSelectedMenu }) {
   );
 
   return (
-    <nav>
-      <Box className={Style.container}>
-        {windowSize > 1300 ? (
-          <Typography variant="h5">Djibril Samassa</Typography>
-        ) : (
-          <img
-            src="avatar.png"
-            alt="Avatar de personne caucasienne"
-            className={Style.logo}
-          />
-        )}
-        {windowSize > 1300 ? (
-          <span> {content}</span>
-        ) : (
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={(e) => {
-              setBurgerMenuOpen(true);
-              setMenuAnchorEl(e.currentTarget);
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
-        )}
-      </Box>
-      <Menu
-        anchorEl={menuAnchorEl}
-        open={burgerMenuOpen}
-        onClose={() => setBurgerMenuOpen(false)}
-      >
-        {content}
-      </Menu>
-      <Divider></Divider>
-    </nav>
+      <nav>
+        <Box className={Style.container}>
+          {windowSize > 1300 ? (
+            <Typography variant="h5">Djibril Samassa</Typography>
+          ) : (
+            <img
+              src="avatar.png"
+              alt="Avatar de personne caucasienne"
+              className={Style.logo}
+            />
+          )}
+          {windowSize > 1300 ? (
+            <span> {content}</span>
+          ) : (
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={(e) => {
+                setBurgerMenuOpen(true);
+                setMenuAnchorEl(e.currentTarget);
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
+        </Box>
+        <Menu
+          anchorEl={menuAnchorEl}
+          open={burgerMenuOpen}
+          onClose={() => setBurgerMenuOpen(false)}
+        >
+          {content}
+        </Menu>
+        <Divider></Divider>
+      </nav>
+
   );
 }
