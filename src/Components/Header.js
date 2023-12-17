@@ -231,6 +231,7 @@ export default function Header({ sections, setSelectedMenu }) {
       >
         {content}
       </Menu>
+      <Divider></Divider>
     </nav>
   );
 }

@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceCard {
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #292929;
+}
+
+.evenCard {
+}
+
+.oddCard {
+  /* margin-left: auto;
+  margin-right: 2em; */
+}

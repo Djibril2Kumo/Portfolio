@@ -3,6 +3,7 @@ import { react, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Header from "../Components/Header";
 import FormationsPage from "../Components/Formations";
+import ExperiencesPages from "../Components/Experiences";
 
 function ResponsiveAppBar() {
   const [selected, setSelected] = useState(0);
@@ -14,7 +15,7 @@ function ResponsiveAppBar() {
     { id: 4, name: "Livre blanc" },
   ];
 
-  const components = [<FormationsPage />];
+  const components = [<FormationsPage />, <ExperiencesPages />];
 
   return (
     <>
