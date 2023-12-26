@@ -1,0 +1,30 @@
+[
+  {
+      "id": 0,
+      "title": "Développeur fullstack",
+      "etablissement": "Les bons artisans",
+      "annee": "2023 - Actuellement",
+      "description": "Le Bac Pro en Systèmes Numériques a éveillé ma passion pour la programmation, en m'initiant aux langages comme Python et Javascript. Ces compétences m'ont ouvert des portes dans la conception web."
+  },
+  {
+    "id": 1,
+    "title": "Développeur frontend",
+    "etablissement": "Technologies 2w",
+    "annee": "2023",
+    "description": "Le titre RNCP DWWM m'a permis de rentrer dans le vif du sujet. Cette formation m'a familiarisé avec le développement pour le web et les appareils mobiles, me permettant d'explorer des langages tels que HTML, CSS, JavaScript, et des frameworks comme React."
+  },
+  {
+      "id": 2,
+      "title": "Développeur frontend",
+      "etablissement": "Linkinnov",
+      "annee": "2021 - 2022",
+      "description": "Le titre RNCP DWWM m'a permis de rentrer dans le vif du sujet. Cette formation m'a familiarisé avec le développement pour le web et les appareils mobiles, me permettant d'explorer des langages tels que HTML, CSS, JavaScript, et des frameworks comme React."
+  },
+  {
+      "id": 3,
+      "title": "Développeur fullstack",
+      "etablissement": "Konexio",
+      "annee": "2020 - 2021",
+      "description": "."
+  }
+]
