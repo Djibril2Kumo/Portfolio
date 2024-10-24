@@ -8,33 +8,35 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Bonjour, je suis <span className="purple">Djibril SAMASSA,</span>
+            habitant <span className="purple"> à Paris</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            Je suis actuellement étudiant en <span className="purple">Master Lead Dev</span> à l'Ecole Européenne des métiers de l'internet.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            J'ai obtenue un bachelor web development dans la même école ainsi qu'un diplôme de chef de projet digitaux.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
+           En dehors de coder, les activités que j'aime pratiquer sont:</p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> La cuisine
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Les jeux vidéos
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Le sport (Jiu Jitsu Brésilien)
             </li>
           </ul>
+          <br/>
+          <p style={{ textAlign: "justify" }}>
+            Ma citation préférée:  <br />
+          </p>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Ils ne savaient pas que c'était impossible, alors ils l'ont fait."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Marc Twain</footer>
         </blockquote>
       </Card.Body>
     </Card>

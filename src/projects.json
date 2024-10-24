@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Les bons artisans",
+        "description": "Développement d'un CRM dédié à la gestion des employés d'une entreprise et des artisans intervenants. Ce système facilite le suivi des missions, la gestion des relations clients, et l'optimisation de la communication entre les équipes pour une meilleure efficacité opérationnelle.",
+        "link": "https://www.lesbonsartisans.fr/",
+        "github": "false"
+    },
+    {
+        "title": "Technologies 2w",
+        "description": "Développement d'une application permettant aux chefs de chantier de visualiser et gérer les projets. L'application facilite la séparation des zones de travail, l'attribution des tâches à différents consultants, et inclut une gestion de calendrier pour une planification efficace des interventions.",
+        "link": "https://france-opc.fr/",
+        "github": "false"
+    },
+    {
+        "title": "Linkinnov",
+        "description": "Développement d'un réseau social dédié aux étudiants universitaires et aux chercheurs en laboratoire. La plateforme permet le partage de connaissances, la collaboration sur des projets, et la création de groupes d'intérêt, favorisant ainsi l'interaction et l'échange d'idées au sein de la communauté académique.",
+        "link": "",
+        "github": "false"
+    },
+    {
+        "title": "Ziboulette SEO",
+        "description": "Projet visant à obtenir le meilleur référencement pour un mot-clé peu concurrentiel. J'ai analysé le marché, identifié une opportunité de niche et déployé une stratégie SEO efficace, permettant de positionner le site en tête des résultats de recherche.",
+        "link": "https://github.com/Djibril2Kumo/Ziboulette---SEO",
+        "github": "true"
+    },
+    {
+        "title": "Renew",
+        "description": "Développement d'une application permettant aux utilisateurs de créer des chaussures personnalisées. Le projet incluait la gestion des profils utilisateurs, la personnalisation en temps réel, et une interface intuitive pour une expérience sur-mesure.",
+        "link": "https://github.com/Djibril2Kumo/renew",
+        "github": "true"
+    },
+    {
+        "title": "Pokedex Kotlin",
+        "description": "Création d'un Pokédex interactif en Kotlin sous Android Studio. L'application permet de consulter les détails des Pokémon via une interface intuitive, avec des fonctionnalités de recherche, de tri et de gestion des favoris pour une expérience utilisateur fluide.",
+        "link": "https://github.com/Sukeshi7/pokedex",
+        "github": "true"
+    },
+    {
+        "title": "Kintsugi",
+        "description": "Développement d'une application accessible permettant de simplifier les demandes de médecin ou d'aide à domicile. Conçue avec une attention particulière à l'accessibilité numérique, l'application guide les utilisateurs à travers un formulaire intuitif, adapté aux personnes avec des besoins spécifiques.",
+        "link": "https://github.com/Djibril2Kumo/kintsugi_front",
+        "github": "true"
+    },
+    {
+        "title": "Streemi",
+        "description": "Développement d'un site de critiques de films et séries avec Symfony, utilisant le moteur de templates Twig. Le site permet aux utilisateurs de consulter, noter et commenter des œuvres, avec une interface dynamique et une gestion optimisée des contenus.",
+        "link": "https://github.com/Djibril2Kumo/streemi",
+        "github": "true"
+    },
+    {
+        "title": "Tinywork",
+        "description": "Développement d'un site permettant aux utilisateurs de rechercher et réserver des espaces de coworking en banlieue parisienne. L'accent a été mis sur la facilité de navigation, avec une recherche géolocalisée et des options de filtrage pour trouver le lieu idéal selon les besoins de chaque utilisateur.",
+        "link": "https://www.facebook.com/tinywork.care/?profile_tab_item_selected=about&_rdr",
+        "github": "false"
+    }
+]
